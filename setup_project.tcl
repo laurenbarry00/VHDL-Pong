@@ -1,7 +1,7 @@
 # Thanks to https://grittyengineer.com/vivado-project-mode-tcl-script/ for this script!
 
 # Create output directory and clear contents
-set outputdir ./vga_project
+set outputdir ./out
 file mkdir $outputdir
 set files [glob -nocomplain "$outputdir/*"]
 if {[llength $files] != 0} {
@@ -12,7 +12,7 @@ if {[llength $files] != 0} {
 }
 
 #Create project
-create_project -part xc7a100tcsg324-1 projectVGA $outputdir
+create_project -part xc7a100tcsg324-1 pong_game $outputdir
 
 #add source files to Vivado project
 # add_files -fileset sim_1 ./path/to/testbench.vhd
@@ -20,11 +20,11 @@ create_project -part xc7a100tcsg324-1 projectVGA $outputdir
 # add_files -fileset constrs_1 ./path/to/constraint/constraint.xdc
 # add_files [glob ./path/to/library/sources/*.vhd]
 # set_property -library userDefined [glob ./path/to/library/sources/*.vhd]
-add_files [glob ./*.vhd]
-add_files -fileset constrs_1 ./Nexys4DDR_Master.xdc
+add_files [glob ./src/*.vhd]
+add_files -fileset constrs_1 ./constraints/Nexys4DDR_Master.xdc
 
 #set top level module and update compile order
-set_property top final_project [current_fileset]
+set_property top Pong_VGA [current_fileset]
 update_compile_order -fileset sources_1
 # update_compile_order -fileset sim_1
 
