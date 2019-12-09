@@ -11,7 +11,8 @@ Our project is to create a pong game that is displayed using VGA. We plan to imp
 ## List of requirements (ranked from easy to hard)
 * Setup RGB VGA output 
 * Calculate ball dimensions using outer bounds (ball_ xl, ball_xr, ball_yt, ball_yb) 
-* Calculate paddle 1’s dimensions using bounds (paddle_xl, paddle_xr, paddle_yt, paddle_yb) * Calculate the speed and direction of the ball and paddle
+* Calculate paddle 1’s dimensions using bounds (paddle_xl, paddle_xr, paddle_yt, paddle_yb)
+* Calculate the speed and direction of the ball and paddle
 * Set the RGB colors for the background, ball, and paddle 
 * Update/display the positions of the ball and paddle 
 * Add button controls to paddle 1 using onboard buttons 
