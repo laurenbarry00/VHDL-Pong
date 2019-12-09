@@ -1,0 +1,10 @@
+#########
+#Exclude all
+#########
+*
+!.gitignore
+!*.vhd
+!*.xdc
+!*.sh
+!*.tcl
+!*.md
