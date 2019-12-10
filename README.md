@@ -23,4 +23,4 @@ Our project is to create a pong game that is displayed using VGA. We plan to imp
 * Displaying each player’s score on the 7-segment display 
 
 ## High level hardware block diagram for the application. 
-In-Progress.
+![A high-level diagram outlining the VHDL structure.](https://i.imgur.com/p4AuosV.png)
